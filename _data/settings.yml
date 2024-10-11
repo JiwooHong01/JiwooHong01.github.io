@@ -1,7 +1,7 @@
 menu:
 - {name: 'courses', url: '/courses'}
 - {name: 'cv', url: '/cv'}
-- {name: 'project', url: '/project'}
+- {name: 'project', url: '/publications'}
 
 courses:
 - {name: 'Vector Calculus', url: 'vector-calculus'}
