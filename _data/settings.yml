@@ -4,10 +4,12 @@ menu:
 - {name: 'project', url: '/project'}
 
 courses:
-- {name: 'Vector Calculus', url: 'vector-calculus'}
-- {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
-- {name: 'Stellar Structures', url: 'stellar-structures'}
+- {name: 'Computer System', url: 'computer-system'}
+- {name: 'Computer Vision', url: 'computer-vision'}
+- {name: 'Logic Circuit Design', url: 'logic-circuit-design'}
 
+projects:
+- {name: 'Software Engineering', url: 'software-engineering'}
 
 
 social:
