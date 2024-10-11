@@ -1,4 +1,4 @@
 ---
-layout: project
-title: "project"
+layout: publications
+title: "Publications"
 ---
