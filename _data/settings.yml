@@ -1,13 +1,16 @@
 menu:
 - {name: 'courses', url: '/courses'}
 - {name: 'cv', url: '/cv'}
-- {name: 'project', url: '/publications'}
+- {name: 'project', url: '/project'}
 
 courses:
 - {name: 'Vector Calculus', url: 'vector-calculus'}
 - {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
 - {name: 'Stellar Structures', url: 'stellar-structures'}
 
+
+
 social:
 - {icon: 'github', link: 'https://github.com/JiwooHong01'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/jiwoo-hong-20694132b/'}
+
