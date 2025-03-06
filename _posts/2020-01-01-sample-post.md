@@ -1,7 +1,3 @@
 ---
-layout: post
-title: "Enter Yonsei University"
+title: "Enter Yonsei University - Computer Science major"
 ---
-
-Enter Yonsei University
-- Computer Science major
