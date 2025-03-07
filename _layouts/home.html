@@ -4,7 +4,15 @@ layout: default
 
 <div class="row g-5 mb-5">
   <div class="col-md-6">
-    Hello, I am an undergraduate CS researcher at Yonsei University. My research interests can be divided into two parts:
+    Hello, I am an undergraduate CS researcher at Yonsei University, double-majoring in 
+    <p style="text-decoration: underline;" >
+      Computer Science
+    </p>
+    and 
+    <p style="text-decoration: underline;" >
+      Mathematics
+    </p>
+    . My research interests can be divided into two parts:
     The first part focuses on optimizing database operations using multiple memtables.
     The second part involves designing private AI systems.
   </div>
@@ -19,7 +27,7 @@ layout: default
   <div class="col-md-12">
     <h3 class="fw-bold border-bottom pb-3 mb-5">Updates</h3>
     {% for post in site.posts %}
-      <p><a href="{{ site.github.url }}/{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %-d, %Y" }}</p>
+      <p>{{ post.title }} - {{ post.date | date: "%B %-d, %Y" }}</p>
     {% endfor %}
   </div>
 </div>
