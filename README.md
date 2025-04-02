@@ -1,6 +1,6 @@
 # Jiwoo Hong
 
-### jiwoo0729 at yonsei.ac.kr
+### jiwoo0729@yonsei.ac.kr
 
 ## Usage
 
