@@ -1,5 +1,5 @@
 url: JiwooHong01.github.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: /blog # the subpath of your site, e.g. /blog
 title: Jiwoo Hong # the name of your site, e.g. ACME Corp.
-description: jiwoo0729 at yonsei.ac.kr
+description: jiwoo0729@yonsei.ac.kr
 future: true
