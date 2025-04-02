@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="row g-5 mb-5">
-  <div class="col-md-6">
+  <div class="content-wrapper">
     <p>
     Hi, I am an undergraduate CS researcher at Yonsei University, 
     double-majoring in <span style="text-decoration: underline;">Computer Science</span> and
@@ -23,7 +23,7 @@ layout: default
       - Diffusion Model
     </p>
   </div>
-  <div class="col-md-6">
+  <div class="content-wrapper">
     <img src="{{ site.github.url }}/assets/img/picture.jpeg" alt="Home" style="width: 50%; height: auto;">
   </div>
 </div>
@@ -31,7 +31,7 @@ layout: default
 <!-- {% include publications.html %} -->
 
 <div class="row g-5 mb-5">
-  <div class="col-md-6">
+  <div class="content-wrapper">
     <h3 class="fw-bold border-bottom pb-3 mb-5">Education</h3>
     {% for post in site.posts %}
       <p>{{ post.title }} - {{ post.date | date: "%B %-d, %Y" }}</p>
