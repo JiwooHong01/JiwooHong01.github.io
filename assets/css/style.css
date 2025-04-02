@@ -1,5 +1,6 @@
 .content-wrapper {
     max-width: 991px;
+    width: 60%;
     margin: 0 auto; /* 화면 가운데 정렬 */
 }
 
