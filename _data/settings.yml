@@ -4,12 +4,16 @@ menu:
 - {name: 'projects', url: '/projects'}
 
 courses:
+- {name: 'Operating System', url: 'operating-system'}
 - {name: 'Computer System', url: 'computer-system'}
 - {name: 'Computer Vision', url: 'computer-vision'}
 - {name: 'Logic Circuit Design', url: 'logic-circuit-design'}
 
 projects:
 - {name: 'Software Engineering', url: 'software-engineering'}
+- {name: 'Face Recognition', url: 'software-engineering'}
+- {name: 'Software Capstone Design(1)', url: 'software-engineering'}
+- {name: 'Software Capstone Design(2)', url: 'software-engineering'}
 
 
 social:
