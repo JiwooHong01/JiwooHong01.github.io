@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: default
 ---
 
@@ -11,4 +11,24 @@ layout: default
       <p><a href="{{ site.github.url }}/projects/{{ project.url}}">{{ project.name }}</a></p>
     {% endfor %}
   </div>
+</div> -->
+
+
+---
+layout: default
+title: Projects
+permalink: /projects/
+---
+
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<div class="grid__wrapper">
+  {% for project in site.data.projects %}
+    <div class="grid__item">
+      <a href="{{ project.link }}">
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+        <p>{{ project.description }}</p>
+      </a>
+    </div>
+  {% endfor %}
 </div>
