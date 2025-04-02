@@ -7,3 +7,16 @@
 .page-title {
     color: black;
 }
+
+.highlight-title {
+    background-color: #ffe599;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.highlight-text {
+    background-color: #b6d7a8;
+    font-size: 12pt;
+    font-weight: bold;
+}
+  
