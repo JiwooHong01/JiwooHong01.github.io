@@ -1,6 +1,6 @@
-# academic
+# Jiwoo Hong
 
-### A Jekyll theme for academia
+### jiwoo0729@yonsei.ac.kr
 
 ![Academic Screenshot](https://raw.githubusercontent.com/LeNPaul/academic/gh-pages/screenshot.png)
 
