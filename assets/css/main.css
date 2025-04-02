@@ -1,3 +1,9 @@
 .page-title {
     color: black;
 }
+
+header a,
+footer a {
+  color: black !important;
+  text-decoration: none; /* 밑줄 없애고 싶다면 */
+}
