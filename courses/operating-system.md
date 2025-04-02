@@ -1,37 +1,14 @@
-<h1 style="font-size:15pt; background-color:#ffe599; font-weight:bold;">[1] OS - introduction</h1>
-Application과 Hardware(CPU, Memory, HDD, DVD, Wireless...)가 만나는 지점이 OS, 즉 운영체제이다.
-우리가 운영체제를 배우는 이유 : 
-new hardware를 만들고 실행, 기능과 성능을 향상
-자원의 효율적인 사용
-기능성
-운영체제에서 어떤.. 핵심같은 존재 : Abstraction
-Physical memory, logical memory간의 연결을 어떻게 할 것인가? 메모리가 무한한 것처럼 보이게 하려면 어떻게 할 것인가?
-파일 저장, 삭제를 어떻게 할 것인가(physical에서 어떻게 logical하게 보이도록 할 것인가?
-오토바이와 컴퓨터는 유사하다... 사실 퍼즐과 컴퓨터도 유사하다... 아마 대부분의 논리적/기능적 구조들은 유사성을 띄는 것 같다.
-OS의 진화
-1) Simple Batch System
-하나의 시간동안 하나의 작업만을 수행
-내가 실행하려는 작업을 Batch로 쌓아서 일렬로 실행시킴
-card reader에서 tape가 있어서, compute를 수행하면 Output이 printer, tape형태로 나옴.
-2) Batch with spooling
-처음으로 스토리지 등장 : CPU가 Disk에 IO 시작
-3) Multiprogrammed Batch Systems
-여러 유저 프로그램들이 등장하여 메인메모리, CPU를 여러 유저 프로그램에 실행시킴
-Program1 read -> OS start IO -> program 2 -> 처럼 여러 프로그램 실행 가능 : 메모리에서 하나의 프로그램을 골라서 이를 실행시키는 구조. 만약, 실행하는 프로그램이 IO가 필요한 경우 OS는 다른 job으로 switch
-4) Time-Sharing Systems
-누구에게 scheduling할지 정하다가, 그냥 동일한 만큼의 시간을 할당해버리고 그 시간이 끝나면 다른 프로그램 할당
--> 이후 PC 시대와 병렬 시스템(Parallel Systems) 실시간 시스템의 도래(Real-Time Systems)
-5) Modern Computing Paradigms
-많은 양의 정보를 고속으로 처리. (Number crunching)
-Web-based computing(www의 도래)
-Embedded computing(범용이 아님. 셋탑박스, 리모콘, 스마트폰 등에 내장되는 것들을 computing하기 시작!)
--> Target-specific HW/SW systems
--> 이때 고려할 사항 : 제한된 메모리, 느린 CPU, 작은 화면, 배터리 ...
--> RETOS. (sensor nodes developed by mobile, embedded)
--> Smartphone OS별로 생김새가 다르다. 예를 들어서 안드로이드는
-User : JAVA 
-Application Framework : Java
-Programmers(Libraries(Libc, SSL), Wifi, GPS ... ) : C, C++
-Hardware(Display driver, camera driver, wifi driver ... ) :C, Kernel
-과 같은 구조라면 TIZEN은
-Web Application, Native Application이 나누어져있고, 이게 Application Framework를 만든 후 그 밑에 Core가 있고(안드로이드의 Programmers 부분과 비슷한듯?) 그 밑단에 Linux Kernel, Devide Drivers가 있는 구조다
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="row g-5 mb-5">
+  <div>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Index</h3>
+    {% for lecture in site.data.courses.os %}
+      <p><a href="{{ site.github.url }}/courses/os/{{ lecture.url}}">{{ lecture.name }}</a></p>
+    {% endfor %}
+  </div>
+</div>
