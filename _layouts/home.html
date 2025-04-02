@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="row g-5 mb-5">
-  <div class="col-md-6">
+  <div class="col-md-8">
     <p>
     Hi, I am an undergraduate CS researcher at Yonsei University, 
     double-majoring in <span style="text-decoration: underline;">Computer Science</span> and
@@ -23,16 +23,18 @@ layout: default
       - Diffusion Model
     </p>
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/picture.jpeg" alt="Home" style="width: 50%; height: auto;">
+  <div class="col-md-4">
+    <img src="{{ site.github.url }}/assets/img/picture.jpeg" alt="Home" style="width: 100%; height: auto;">
   </div>
 </div>
 
 <!-- {% include publications.html %} -->
 
 <div class="row g-5 mb-5">
-  <h3 class="fw-bold border-bottom pb-3 mb-5">Education</h3>
-  {% for post in site.posts %}
-    <p>{{ post.title }} - {{ post.date | date: "%B %-d, %Y" }}</p>
-  {% endfor %}
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Education</h3>
+    {% for post in site.posts %}
+      <p>{{ post.title }} - {{ post.date | date: "%B %-d, %Y" }}</p>
+    {% endfor %}
+  </div>
 </div>
