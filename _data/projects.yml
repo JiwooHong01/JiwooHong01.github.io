@@ -1,5 +1,5 @@
 - title: "speech recognition : Closer through sound: Specialized speech recognition for the elderly and children"
-  image: "/assets/img/project/project1.png"
+  image: "/assets/img/project/project1.jpg"
   link: "/project1"
   description: "This project was part of a competition to develop a Korean speech recognition model.
     The core task of the competition was to build a deep learning model that converts speech to text. Since the baseline model had a high error rate, our team discussed various strategies to improve accuracy. We explored Transformer-based models and experimented with ensemble techniques to boost performance. Additionally, we systematically managed checkpoints to reduce unnecessary retraining, which significantly improved project efficiency. As a result, we successfully reduced the Character Error Rate (CER) from approximately 0.4 to 0.3, ranking within the top 10 out of over 100 participating teams.
