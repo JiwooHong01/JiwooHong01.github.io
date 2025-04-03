@@ -16,8 +16,8 @@
   .card {
     display: flex;
     flex-direction: column;
-
     height: 100%;
+    
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
@@ -27,7 +27,7 @@
   }
   
   .card:hover {
-    transform: scale(1.03);
+    transform: scale(1.02);
   }
   
   .card img {
@@ -39,7 +39,7 @@
   }
   
   .card-text {
-    padding: 15px;
+    padding: 12px;
     font-size: 16px;
     font-weight: bold;
     color: #333;
@@ -99,5 +99,17 @@
     object-fit: cover;
     border-radius: 12px;
     margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 900px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);  /* 태블릿: 2열 */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);  /* 모바일: 1열 */
+    }
   }
   
