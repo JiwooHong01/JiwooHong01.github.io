@@ -42,6 +42,7 @@ layout: default
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
     <h2 id="modal-title"></h2>
+    <p id="modal-image"></p>
     <p id="modal-description"></p>
   </div>
 </div>
@@ -50,9 +51,11 @@ layout: default
   function openModal(element) {
     const modal = document.getElementById('modal');
     const title = document.getElementById('modal-title');
+    const image = document.getElementById('modal-image');
     const desc = document.getElementById('modal-description');
 
     title.innerHTML = element.getAttribute('data-title');
+    image.innerHTML = element.getAttribute('data-image');
     desc.innerHTML = element.getAttribute('data-description');
     modal.style.display = 'block';
   }
