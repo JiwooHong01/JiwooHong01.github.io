@@ -15,7 +15,7 @@
     We observed performance improvements in recommendation systems through multimodal approaches. Using a publicly available TikTok dataset, we analyzed how the order of combining different data modalities—such as video, audio, and text—impacts the model's performance. Evaluation metrics included Precision, Recall, and NDCG. Experimental results showed a significant improvement in recommendation accuracy when using a multimodal approach, and we were able to identify the influence of the concatenation order on the model’s performance.<br>
     <strong>My role</strong> I built the baseline model and served as the final presenter. I also contributed to the analysis of the results and the writing of the final report."
 
-- title: "Recommendation system: App that recommends outfits by combining clothing items
+- title: "Recommendation system: App that recommends outfits by combining clothing items"
   image: "/assets/img/project/project3.png"
   link: "/project3"
   description: 
