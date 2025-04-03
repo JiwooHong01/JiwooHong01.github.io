@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <!-- <div style="width: 80%; max-width: 1200px; margin: auto;"> -->
+    <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <!-- <title>Projects | Jiwoo Hong</title> -->
+  <title>Jiwoo Hong</title>
+  <link rel="stylesheet" href="/assets/libs/bootstrap/bootstrap.min.css">
+  <script defer src="/assets/libs/fontawesome/all.min.js"></script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/wave.png">
+  <link rel="shortcut icon" href="/assets/wave.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+    <body>
+      <div class="col-lg-8 mx-auto p-3 py-md-5">
+      <!-- <div class="content-wrapper"> -->
+        <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
+  <div>
+    <a href="/" class="d-flex align-items-start text-decoration-none">
+      <span class="fs-4 fw-bold">Jiwoo Hong</span>
+    </a>
+    <a href="/" class="d-flex align-items-start text-decoration-none">
+      <span>jiwoo0729@yonsei.ac.kr</span>
+    </a>
+  </div>
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+    
+      <a class="me-3 py-2 text-decoration-none" href="/courses">courses</a>
+    
+      <a class="me-3 py-2 text-decoration-none" href="/cv">cv</a>
+    
+      <a class="me-3 py-2 text-decoration-none" href="/projects">projects</a>
+    
+  </nav>
+</header>
+        <!-- ---
+layout: default
+---
+
+
+
+
+<div class="row g-5 mb-5">
+  <div>
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Projects</h3>
+    
+      <p><a href="/projects/software-engineering">Software Engineering</a></p>
+    
+      <p><a href="/projects/software-engineering">Face Recognition</a></p>
+    
+      <p><a href="/projects/software-engineering">Software Capstone Design(1)</a></p>
+    
+      <p><a href="/projects/software-engineering">Software Capstone Design(2)</a></p>
+    
+  </div>
+</div> -->
+
+
+
+
+<link rel="stylesheet" href="/assets/css/projects.css">
+
+<div class="grid">
+  
+    <div class="card" 
+        data-title="Closer through sound: Specialized speech recognition for the elderly and children"
+        data-image="/assets/img/project/project1.jpg"
+        data-description="This project was part of a competition to develop a Korean speech recognition model. The core task of the competition was to build a deep learning model that converts speech to text. Since the baseline model had a high error rate, our team discussed various strategies to improve accuracy. We explored Transformer-based models and experimented with ensemble techniques to boost performance. Additionally, we systematically managed checkpoints to reduce unnecessary retraining, which significantly improved project efficiency. As a result, we successfully reduced the Character Error Rate (CER) from approximately 0.4 to 0.3, ranking within the top 10 out of over 100 participating teams.&lt;br&gt;
+&lt;strong&gt;My role&lt;/strong&gt; hyperparameter tuning/resolving memory issues"
+        onclick="openModal(this)">
+      <img src="/assets/img/project/project1.jpg" alt="projects" style="width: 100%; height: auto;" />
+      <div class="card-text">Closer through sound: Specialized speech recognition for the elderly and children</div>
+    </div>
+  
+    <div class="card" 
+        data-title="Exploring Recommendation Systems: A Multi-Modal Approach to GNN-Based Models"
+        data-image="/assets/img/project/project2.png"
+        data-description="We observed performance improvements in recommendation systems through multimodal approaches. Using a publicly available TikTok dataset, we analyzed how the order of combining different data modalities—such as video, audio, and text—impacts the model&#39;s performance. Evaluation metrics included Precision, Recall, and NDCG. Experimental results showed a significant improvement in recommendation accuracy when using a multimodal approach, and we were able to identify the influence of the concatenation order on the model’s performance.&lt;br&gt; &lt;strong&gt;My role&lt;/strong&gt; Baseline setup/Person in charge of the final presentation"
+        onclick="openModal(this)">
+      <img src="/assets/img/project/project2.png" alt="projects" style="width: 100%; height: auto;" />
+      <div class="card-text">Exploring Recommendation Systems: A Multi-Modal Approach to GNN-Based Models</div>
+    </div>
+  
+    <div class="card" 
+        data-title="Recommendation system: App that recommends outfits by combining clothing items"
+        data-image="/assets/img/project/project3.png"
+        data-description="We developed a team project app that recommends outfits by combining clothing items. &lt;strong&gt;Dataset construction&lt;/strong&gt; Initially, we attempted to distinguish between tops and bottoms using the titles, but it was difficult to do so accurately based on titles alone. Therefore, we manually labeled the data to build our dataset. We used the CLIP model to classify the clothing items, but since the classification wasn&#39;t perfect with our dataset, we discussed alternatives during our weekly meetings. We concluded that the most accurate approach would be to recommend the top three most probable clothing categories to the user, and we proceeded with that method.&lt;br&gt;
+&lt;strong&gt;Continual learning&gt;/strong&gt; We implemented a structure that stores a portion of the previous data in memory (Replay) to mitigate catastrophic forgetting.&lt;br&gt;
+
+&lt;strong&gt;My role&lt;/strong&gt; Dataset construction/continual learning"
+        onclick="openModal(this)">
+      <img src="/assets/img/project/project3.png" alt="projects" style="width: 100%; height: auto;" />
+      <div class="card-text">Recommendation system: App that recommends outfits by combining clothing items</div>
+    </div>
+  
+</div>
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="" alt="Project image" class="modal-img" />
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
+  </div>
+</div>
+
+<script>
+  function openModal(element) {
+    const modal = document.getElementById('modal');
+    const title = document.getElementById('modal-title');
+    const desc = document.getElementById('modal-description');
+    const img = document.getElementById('modal-image');
+
+    title.innerHTML = element.getAttribute('data-title');
+    desc.innerHTML = element.getAttribute('data-description');
+    img.src = element.getAttribute('data-image');
+    modal.style.display = 'block';
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target === modal) {
+      closeModal();
+    }
+  }
+</script>
+
+        <footer class="pt-5 my-5 text-muted border-top">
+  <div class="row">
+    <div class="col-md-6 text-end social-media-icons">
+      
+        <a href="https://github.com/JiwooHong01" class="ms-3 fs-5"><i class="fab fa-github"></i></a>
+      
+        <a href="https://www.linkedin.com/in/jiwoo-hong-20694132b/" class="ms-3 fs-5"><i class="fab fa-linkedin"></i></a>
+      
+    </div>
+  </div>
+</footer>
+      </div>
+    </body>
+  <!-- </div> -->
+</html>
