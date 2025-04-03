@@ -5,7 +5,7 @@
     This project was part of a competition to develop a Korean speech recognition model.
     The core task of the competition was to build a deep learning model that converts speech to text. Since the baseline model had a high error rate, our team discussed various strategies to improve accuracy. We explored Transformer-based models and experimented with ensemble techniques to boost performance. Additionally, we systematically managed checkpoints to reduce unnecessary retraining, which significantly improved project efficiency. As a result, we successfully reduced the Character Error Rate (CER) from approximately 0.4 to 0.3, ranking within the top 10 out of over 100 participating teams.<br>
 
-    <strong>My role</strong>: I focused on hyperparameter tuning and resolving memory issues. To address memory overflow problems, I led efforts to adjust the mini-batch size and simplify the model architecture.
+    <strong>My role</strong> I focused on hyperparameter tuning and resolving memory issues. To address memory overflow problems, I led efforts to adjust the mini-batch size and simplify the model architecture.
 
   
 - title: "Exploring Recommendation Systems: A Multi-Modal Approach to GNN-Based Models"
@@ -13,16 +13,16 @@
   link: "/project2"
   description: 
     We observed performance improvements in recommendation systems through multimodal approaches. Using a publicly available TikTok dataset, we analyzed how the order of combining different data modalities—such as video, audio, and text—impacts the model's performance. Evaluation metrics included Precision, Recall, and NDCG. Experimental results showed a significant improvement in recommendation accuracy when using a multimodal approach, and we were able to identify the influence of the concatenation order on the model’s performance.<br>
-    <strong>My role</strong>: I built the baseline model and served as the final presenter. I also contributed to the analysis of the results and the writing of the final report."
+    <strong>My role</strong> I built the baseline model and served as the final presenter. I also contributed to the analysis of the results and the writing of the final report."
 
 - title: "Recommendation system: App that recommends outfits by combining clothing items
   image: "/assets/img/project/project3.png"
   link: "/project3"
   description: 
     We developed a team project app that recommends outfits by combining clothing items.
-    Dataset construction: Initially, we attempted to distinguish between tops and bottoms using the titles, but it was difficult to do so accurately based on titles alone. Therefore, we manually labeled the data to build our dataset. We used the CLIP model to classify the clothing items, but since the classification wasn't perfect with our dataset, we discussed alternatives during our weekly meetings. We concluded that the most accurate approach would be to recommend the top three most probable clothing categories to the user, and we proceeded with that method.<br>
+    <strong>Dataset construction</strong> Initially, we attempted to distinguish between tops and bottoms using the titles, but it was difficult to do so accurately based on titles alone. Therefore, we manually labeled the data to build our dataset. We used the CLIP model to classify the clothing items, but since the classification wasn't perfect with our dataset, we discussed alternatives during our weekly meetings. We concluded that the most accurate approach would be to recommend the top three most probable clothing categories to the user, and we proceeded with that method.<br>
 
-    Continual learning: We implemented a structure that stores a portion of the previous data in memory (Replay) to mitigate catastrophic forgetting.<br>
+    <strong>Continual learning>/strong> We implemented a structure that stores a portion of the previous data in memory (Replay) to mitigate catastrophic forgetting.<br>
 
 
-    <strong>My role</strong>: I was responsible for dataset construction and continual learning. I also contributed to the model architecture and training process.
+    <strong>My role</strong> I was responsible for dataset construction and continual learning. I also contributed to the model architecture and training process.
