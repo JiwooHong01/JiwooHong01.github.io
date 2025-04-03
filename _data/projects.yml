@@ -19,10 +19,10 @@
   image: "/assets/img/project/project3.png"
   link: "/project3"
   description: 
-    We developed a team project app that recommends outfits by combining clothing items.
+    We developed a team project app that recommends outfits by combining clothing items.<br>
     <strong>Dataset construction</strong> Initially, we attempted to distinguish between tops and bottoms using the titles, but it was difficult to do so accurately based on titles alone. Therefore, we manually labeled the data to build our dataset. We used the CLIP model to classify the clothing items, but since the classification wasn't perfect with our dataset, we discussed alternatives during our weekly meetings. We concluded that the most accurate approach would be to recommend the top three most probable clothing categories to the user, and we proceeded with that method.<br>
 
-    <strong>Continual learning>/strong> We implemented a structure that stores a portion of the previous data in memory (Replay) to mitigate catastrophic forgetting.<br>
+    <strong>Continual learning></strong> We implemented a structure that stores a portion of the previous data in memory (Replay) to mitigate catastrophic forgetting.<br>
 
 
     <strong>My role</strong> Dataset construction/continual learning
@@ -33,9 +33,24 @@
   description: 
     We developed a diffusion model that generates images while preserving privacy. The model was trained on a dataset of images, and we implemented differential privacy techniques to ensure that the generated images do not reveal sensitive information about the training data. We evaluated the model's performance using metrics such as Inception Score (IS) and Fréchet Inception Distance (FID). The results demonstrated that our model could generate high-quality images while maintaining privacy, making it suitable for applications in sensitive domains.<br>
     <strong>My role</strong> model training/DPDM experiments and DDPM experiments/final presentation
-# - title: "AI-based Chatbot: A Conversational Agent for Personalized Learning"
-#   image: "/assets/img/project/project5.png"
-#   link: "/project5"
-#   description: 
-#     We developed an AI-based chatbot that provides personalized learning experiences for users. The chatbot uses natural language processing (NLP) techniques to understand user queries and provide relevant information. We implemented a recommendation system that suggests learning resources based on user preferences and learning history. The chatbot was evaluated through user feedback, and the results indicated a high level of user satisfaction with its performance.<br>
-#     <strong>My role</strong> model training/DPDM experiments and DDPM experiments/final presentation
+
+- title : "Face Recognition: A Deep Learning Approach to Identify Individuals from Images"
+  image: "/assets/img/project/project5.png"
+  link: "/project5"
+  description: 
+    We developed a face recognition system using deep learning techniques. The system was trained on a large dataset of facial images, and we fine-tuned some open source models such as DeepFace.<br>
+    <strong>My role</strong> model training
+
+- title: "Sleep stage classification based on machine learning, Yonsei University"
+  image: "/assets/img/project/project6.jpg"
+  link: "/project6"
+  description: 
+    We developed a sleep stage classification system using machine learning techniques. The system was trained on a dataset of sleep EEG signals.<br>
+    <strong>My role</strong> dataset preprocessing
+- title: "(In progress) Medical Chatbot: RAG Chatbot for Medical Information Retrieval"
+  image: "/assets/img/project/project7.png"
+  link: "/project7"
+  description: 
+    We developed a medical chatbot that utilizes retrieval-augmented generation (RAG) techniques to provide accurate and relevant medical information. <br>
+    <strong>Todo</strong> The chatbot was trained on a large dataset of medical texts, and we implemented a retrieval mechanism to enhance the quality of the generated responses. We are currently working on improving the chatbot's performance by fine-tuning the retrieval and generation components. Evaluation metric will be BLEU and ROUGE.<br>
+    <strong>My role</strong> model training
