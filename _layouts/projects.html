@@ -26,7 +26,7 @@ layout: default
 
 <div class="grid">
   {% for project in site.data.projects %}
-    <div class="card" onclick="openModal({{ forloop.index0 }})">
+    <div class="card" onclick="openModal('{{ forloop.index0 }}')">
       <img src="{{ site.github.url }}{{project.image}}" alt="projects" style="width: 100%; height: auto;" />
       <div class="card-text">{{ project.title }}</div>
     </div>
@@ -41,7 +41,7 @@ layout: default
   </div>
 </div>
 
-<script>
+<script type="text/template" id="project-data">
   const modal = document.getElementById('modal');
   const title = document.getElementById('modal-title');
   const desc = document.getElementById('modal-description');
