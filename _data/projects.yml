@@ -41,16 +41,17 @@
     We developed a face recognition system using deep learning techniques. The system was trained on a large dataset of facial images, and we fine-tuned some open source models such as DeepFace.<br>
     <strong>My role</strong> model training
 
-- title: "Sleep stage classification based on machine learning, Yonsei University"
-  image: "/assets/img/project/project6.jpg"
-  link: "/project6"
-  description: 
-    We developed a sleep stage classification system using machine learning techniques. The system was trained on a dataset of sleep EEG signals.<br>
-    <strong>My role</strong> dataset preprocessing
 - title: "(In progress) Medical Chatbot: RAG Chatbot for Medical Information Retrieval"
   image: "/assets/img/project/project7.png"
-  link: "/project7"
+  link: "/project6"
   description: 
     We developed a medical chatbot that utilizes retrieval-augmented generation (RAG) techniques to provide accurate and relevant medical information. <br>
     <strong>Todo</strong> The chatbot was trained on a large dataset of medical texts, and we implemented a retrieval mechanism to enhance the quality of the generated responses. We are currently working on improving the chatbot's performance by fine-tuning the retrieval and generation components. Evaluation metric will be BLEU and ROUGE.<br>
     <strong>My role</strong> model training
+
+- title: "Sleep stage classification based on machine learning, Yonsei University"
+  image: "/assets/img/project/project7.jpg"
+  link: "/project7"
+  description: 
+    We developed a sleep stage classification system using machine learning techniques. The system was trained on a dataset of sleep EEG signals.<br>
+    <strong>My role</strong> dataset preprocessing
