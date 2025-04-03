@@ -28,6 +28,7 @@ layout: default
   {% for project in site.data.projects %}
     <div class="card" 
         data-title="{{ project.title | escape }}"
+        data-image="{{ project.image | escape }}"
         data-description="{{ project.description | escape }}"
         onclick="openModal(this)">
       <img src="{{ site.github.url }}{{project.image}}" alt="projects" style="width: 100%; height: auto;" />
