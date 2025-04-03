@@ -26,48 +26,45 @@ layout: default
 
 <div class="grid">
   {% for project in site.data.projects %}
-    <div class="card" onclick="openModal({{ forloop.index0 }})">
+    <div class="card" 
+        data-title="{{ project.title | escape }}"
+        data-description="{{ project.description | escape }}"
+        onclick="openModal(this)">
       <img src="{{ site.github.url }}{{project.image}}" alt="projects" style="width: 100%; height: auto;" />
       <div class="card-text">{{ project.title }}</div>
     </div>
   {% endfor %}
 </div>
 
+<!-- Modal -->
 <div id="modal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
-    <h2 id="modal-title">Project Title</h2>
-    <p id="modal-description">Project description goes here...</p>
+    <h2 id="modal-title"></h2>
+    <p id="modal-description"></p>
   </div>
 </div>
 
 <script>
-  const modal = document.getElementById('modal');
-  const title = document.getElementById('modal-title');
-  const desc = document.getElementById('modal-description');
+  function openModal(element) {
+    const modal = document.getElementById('modal');
+    const title = document.getElementById('modal-title');
+    const desc = document.getElementById('modal-description');
 
-  const projectData = [
-    {% for project in site.data.projects %}
-    {
-      title: "{{ project.title | escape }}",
-      description: "{{ project.description | escape }}"
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
-
-  function openModal(index) {
-    title.textContent = projectData[index].title;
-    desc.textContent = projectData[index].description;
+    title.textContent = element.getAttribute('data-title');
+    desc.textContent = element.getAttribute('data-description');
     modal.style.display = 'block';
   }
 
   function closeModal() {
+    const modal = document.getElementById('modal');
     modal.style.display = 'none';
   }
 
   window.onclick = function(event) {
+    const modal = document.getElementById('modal');
     if (event.target === modal) {
       closeModal();
     }
-  };
+  }
 </script>
