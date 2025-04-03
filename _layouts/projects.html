@@ -52,8 +52,8 @@ layout: default
     const title = document.getElementById('modal-title');
     const desc = document.getElementById('modal-description');
 
-    title.textContent = element.getAttribute('data-title');
-    desc.textContent = element.getAttribute('data-description');
+    title.innerHTML = element.getAttribute('data-title');
+    desc.innerHTML = element.getAttribute('data-description');
     modal.style.display = 'block';
   }
 
