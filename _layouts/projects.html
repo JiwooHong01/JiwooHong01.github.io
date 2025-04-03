@@ -41,8 +41,8 @@ layout: default
 <div id="modal" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-image" src="{{ site.github.url }}{{project.image}}" alt="Project image" class="modal-img" />
     <h2 id="modal-title"></h2>
-    <p id="modal-image"></p>
     <p id="modal-description"></p>
   </div>
 </div>
@@ -51,12 +51,12 @@ layout: default
   function openModal(element) {
     const modal = document.getElementById('modal');
     const title = document.getElementById('modal-title');
-    const image = document.getElementById('modal-image');
     const desc = document.getElementById('modal-description');
+    const img = document.getElementById('modal-image');
 
     title.innerHTML = element.getAttribute('data-title');
-    image.innerHTML = element.getAttribute('data-image');
     desc.innerHTML = element.getAttribute('data-description');
+    img.src = element.getAttribute('data-image');
     modal.style.display = 'block';
   }
 
