@@ -26,3 +26,16 @@
 
 
     <strong>My role</strong> Dataset construction/continual learning
+
+- title: "Privacy-Preserving Diffusion Models: Integrating Differential Privacy for Secure Image Generation"
+  image: "/assets/img/project/project4.png"
+  link: "/project4"
+  description: 
+    We developed a diffusion model that generates images while preserving privacy. The model was trained on a dataset of images, and we implemented differential privacy techniques to ensure that the generated images do not reveal sensitive information about the training data. We evaluated the model's performance using metrics such as Inception Score (IS) and Fréchet Inception Distance (FID). The results demonstrated that our model could generate high-quality images while maintaining privacy, making it suitable for applications in sensitive domains.<br>
+    <strong>My role</strong> model training/DPDM experiments and DDPM experiments/final presentation
+# - title: "AI-based Chatbot: A Conversational Agent for Personalized Learning"
+#   image: "/assets/img/project/project5.png"
+#   link: "/project5"
+#   description: 
+#     We developed an AI-based chatbot that provides personalized learning experiences for users. The chatbot uses natural language processing (NLP) techniques to understand user queries and provide relevant information. We implemented a recommendation system that suggests learning resources based on user preferences and learning history. The chatbot was evaluated through user feedback, and the results indicated a high level of user satisfaction with its performance.<br>
+#     <strong>My role</strong> model training/DPDM experiments and DDPM experiments/final presentation
