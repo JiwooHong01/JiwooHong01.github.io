@@ -1,0 +1,38 @@
+---
+---
+
+@import "minima";
+
+/* 주석 토큰 전부 초록 (#6aa84f) + 8pt 옵션 클래스 */
+.highlight .c,
+.highlight .cm,
+.highlight .c1,
+.highlight .cs,
+.highlight .ch,
+.highlighter-rouge .c,
+.highlighter-rouge .cm,
+.highlighter-rouge .c1,
+.highlighter-rouge .cs,
+pre.highlight span.c,
+pre.highlight span.c1,
+pre code .c,
+pre code .cm,
+pre code .c1,
+pre code .cs,
+code .token.comment,
+pre code .token.comment {
+  color: #6aa84f !important;
+}
+
+/* 전처리기(#include) 색 바꾸고 싶으면 */
+.highlight .cp,
+.highlighter-rouge .cp {
+  color: #a64d79 !important;
+}
+
+/* (옵션) 특정 코드블럭만 8pt로 */
+.small-code pre,
+.small-code code {
+  font-size: 8pt !important;
+  line-height: 1.4;
+}
