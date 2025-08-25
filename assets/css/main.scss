@@ -1,4 +1,17 @@
----
----
+@import "minima";
 
-// @import "main";
+/* ① Rouge 주석 토큰을 원하는 색으로 */
+.highlight .c,     /* Comment (광의) */
+.highlight .cm,    /* Comment::Multiline */
+.highlight .c1,    /* Comment::Single */
+.highlight .cs {   /* Comment::Special */
+  color: #6aa84f !important;
+}
+
+/* ② (옵션) 특정 코드블럭만 8pt로 보이게 하는 클래스 */
+.small-code pre,
+.small-code code {
+  font-size: 8pt !important;
+  line-height: 1.4;
+}
+.highlight .cp { color: #a64d79 !important; } /* 예시 색상 */
