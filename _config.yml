@@ -3,3 +3,7 @@ baseurl: /blog # the subpath of your site, e.g. /blog
 title: Jiwoo Hong # the name of your site, e.g. ACME Corp.
 description: jiwoo0729@yonsei.ac.kr
 future: true
+markdown: kramdown
+highlighter: rouge
+# (테마를 쓰고 있다면)
+theme: minima   # 또는 remote_theme: owner/repo
